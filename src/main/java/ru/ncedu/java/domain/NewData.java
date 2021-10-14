@@ -10,12 +10,11 @@ public class NewData {
 
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
-    private Integer id;
+    private long id;
 
     private String text;
 
-    public NewData() {
-    }
+    public NewData() { }
 
     public NewData(String text) {
         this.text = text;
@@ -27,5 +26,9 @@ public class NewData {
 
     public void setText(String text) {
         this.text = text;
+    }
+
+    public long getId() {
+        return id;
     }
 }
